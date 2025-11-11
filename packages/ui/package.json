@@ -7,9 +7,10 @@
     "./main.css": "./src/main.css"
   },
   "scripts": {
-    "shadcn": "pnpm dlx shadcn@canary",
+    "ui:add": "pnpm dlx shadcn@canary add",
     "lint": "eslint src",
-    "tsc": "tsc --noEmit"
+    "build": "tsc --build",
+    "tsc": "tsc --build"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -18,13 +19,12 @@
     "@types/react-dom": "catalog:"
   },
   "dependencies": {
-    "@radix-ui/react-select": "^2.2.5",
-    "@radix-ui/react-slot": "catalog:",
+    "@iconify/react": "catalog:",
     "@tailwindcss/postcss": "catalog:",
     "class-variance-authority": "catalog:",
     "clsx": "catalog:",
-    "lucide-react": "^0.513.0",
     "postcss": "catalog:",
+    "radix-ui": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
     "tailwind-merge": "catalog:",
