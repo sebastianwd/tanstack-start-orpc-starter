@@ -331,6 +331,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.15.29
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.2
