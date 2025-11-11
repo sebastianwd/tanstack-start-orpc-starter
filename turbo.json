@@ -5,7 +5,8 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "env": ["BETTER_AUTH_SECRET", "BETTER_AUTH_URL"]
     },
     "lint": {
       "dependsOn": ["^lint"]
@@ -14,6 +15,10 @@
       "dependsOn": ["^tsc"]
     },
     "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "ui:add": {
       "cache": false,
       "persistent": true
     }

@@ -1,9 +1,5 @@
 {
-  "extends": "@repo/typescript-config/tsconfig.react.json",
   "references": [
-    {
-      "path": "../../packages/ui"
-    },
     {
       "path": "../../packages/typescript-config"
     },
@@ -11,18 +7,22 @@
       "path": "../../packages/eslint-config"
     },
     {
-      "path": "../../packages/trpc"
+      "path": "../../packages/api"
+    },
+    {
+      "path": "../../packages/utils"
+    },
+    {
+      "path": "../../packages/ui"
     }
   ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
   "compilerOptions": {
+    "noEmit": true,
     "paths": {
       "~/*": [
         "./src/*"
       ]
     }
-  }
+  },
+  "extends": "@repo/typescript-config/tsconfig.react.json"
 }
